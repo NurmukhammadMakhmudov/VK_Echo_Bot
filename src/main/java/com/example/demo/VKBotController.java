@@ -14,7 +14,6 @@ public class VKBotController {
     public String messageReceiver(@RequestBody VKMessage message) throws IOException {
         VKService vkService = new VKService(); // creating object of VKService to send message back to user
         vkService.sendMessage(message.getObject().getMessage().getPeer_id(), message.getObject().getMessage().getText()); // passing ID of user, message to send and random_ID
-
         return "ok";
     }
 
