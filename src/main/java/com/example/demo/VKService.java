@@ -28,9 +28,6 @@ public class VKService {
         String newMessage = "you said: " + message;
         String url = String.format("https://api.vk.com/method/messages.send?peer_id=%d&message=%s&access_token=%s&v=%s&random_id=%s", peer_id, newMessage, accessToken, apiVersion, date.getTime());
         RestTemplate restTemplate = new RestTemplate();
-        String d = restTemplate.getForObject(url, String.class);
-
-
 
     }
 }
