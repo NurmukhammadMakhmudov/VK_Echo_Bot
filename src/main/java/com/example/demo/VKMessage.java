@@ -15,11 +15,12 @@ public class VKMessage {
         return group_id;
     }
 
-    public MessageObject getObject() {return object;}
+    public MessageObject getObject() {
+        return object;
+    }
 
 
-
-    public static class MessageObject{
+    public static class MessageObject {
         private Message message;
 
         // Getters
@@ -30,7 +31,7 @@ public class VKMessage {
 
     }
 
-    public static class Message{
+    public static class Message {
         private String text;
         private long peer_id;
 
@@ -44,7 +45,6 @@ public class VKMessage {
         }
 
     }
-
 
 
 }
