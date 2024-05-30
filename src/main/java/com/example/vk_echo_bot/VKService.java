@@ -12,10 +12,6 @@ import java.util.Date;
 public class VKService {
 
 
-    public VKService() {
-    }
-
-
     @Value("${vk.api.key}")
     private String accessToken;// Getting API Token form properties
     @Value("${vk.api.version}")
